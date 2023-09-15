@@ -1,0 +1,72 @@
+@use '../base/variable';
+
+.dashboard__page {
+    width: 100%;
+    height: auto;
+    padding: 10px 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.dashboard__top {
+    width: 100%;
+    height: 200px;
+    padding-left: 50px;
+    background-color: #624BFF;
+
+    h1 {
+        margin-top: 5%;
+        color: variable.$white-color;
+        font-size: variable.$text-2-size;
+    }
+}
+
+.dashboard__data {
+    display: flex;
+    position: relative;
+    bottom: 20px;
+    justify-content: space-around;
+}
+
+.dashboard__top-box {
+    cursor: pointer;
+    width: 250px;
+    height: 150px;
+    background-color: white;
+    border-radius: variable.$radius-default;
+    border: variable.$border-default;
+    padding: variable.$default-padding;
+
+    h2 {
+        font-size: variable.$default-size ;
+    }
+
+    p {
+        margin-top: 15px;
+        color: variable.$text-color;
+    }
+}
+
+.dashboard__data-top {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .dashboard__icon {
+        border: variable.$border-default;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        background-color: variable.$btn-bg-hover-color;
+        color: variable.$white-color;
+        font-size: 25px;
+    }
+
+    h1 {
+        margin-top: 10px;
+        font-size: variable.$text-size;
+        color: variable.$text-color;
+    }
+
+}

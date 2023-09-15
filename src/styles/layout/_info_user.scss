@@ -1,0 +1,125 @@
+@use '../base/variable';
+
+.user__info {
+    margin-top: 50px;
+    width: 100%;
+    height: auto;
+    padding: 10px 15px;
+    display: flex;
+    flex-direction: column;
+
+    .fon {
+        height: 300px;
+    }
+
+    .user__info-top {
+        width: 29%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: variable.$list-color;
+    }
+
+    .user__names {
+        img {
+            width: 100px;
+            position: relative;
+            bottom: 40px;
+            left: 20px;
+            height: 100px;
+        }
+
+        .user__names-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: variable.$text-size;
+            color: variable.$title-color;
+        }
+
+        .users__socials {
+            cursor: pointer;
+            font-size: 35px;
+            color: variable.$link-color;
+        }
+    }
+
+    .users__posts {
+        margin-top: 40px;
+        display: flex;
+        justify-content: space-between;
+
+        h2 {
+            font-size: variable.$text-1-size;
+            color: variable.$text-color;
+        }
+
+        h1 {
+            font-size: variable.$text-1-size;
+
+            span {
+                color: variable.$btn-bg-color;
+            }
+        }
+    }
+
+    .users__deg {
+        margin-top: 15px;
+        border-top: 2px solid variable.$text-color;
+        padding: 15px 0;
+        display: flex;
+        justify-content: space-between;
+
+        h1 {
+            font-size: variable.$text-size;
+            color: variable.$text-color;
+        }
+
+        span {
+            color: variable.$title-color;
+            font-weight: 900;
+        }
+    }
+
+    .user__overview,
+    .user__description {
+        margin-top: 20px;
+        padding-top: 10px;
+        border-top: 2px solid variable.$text-color;
+        font-size: variable.$text-size;
+        color: variable.$title-color;
+
+        p,
+        li {
+            word-spacing: 5px;
+            list-style: circle;
+            padding-left: 25px;
+            margin-top: 10px;
+            opacity: 0.8;
+            line-height: 30px;
+            font-size: variable.$text-1-size;
+        }
+        .user__description{
+            border-top: 0px solid white;
+        }
+    }
+    .user__description{
+        border-top: 0px solid white;
+    }
+
+    .info__bottom {
+        
+        margin-top: 25px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h1 {
+            font-size: variable.$text-2-size;
+            color: variable.$title-color;
+        }
+        button{
+            margin-left: 20px;
+        }
+    }
+}

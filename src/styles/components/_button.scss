@@ -1,0 +1,32 @@
+@use '../base/variable';
+
+.btn-cc {
+    font-size: variable.$text-1-size;
+    background-color: transparent;
+    cursor: pointer;
+    padding: variable.$default-padding;
+}
+
+.btn-br {
+    font-size: variable.$text-1-size;
+    background-color: transparent;
+    cursor: pointer;
+    padding: variable.$default-padding;
+    border: variable.$border-default;
+    border-radius: variable.$radius-1-size;
+}
+
+
+.btn-gr {
+    font-size: variable.$text-1-size;
+    background-color: variable.$btn-bg-color;
+    padding: variable.$default-padding;
+    cursor: pointer;
+    color: variable.$white-color;
+    border-radius: variable.$radius-1-size;
+
+    &:hover {
+        background-color: variable.$btn-bg-hover-color;
+        transition: 0.5s ease;
+    }
+}

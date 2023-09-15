@@ -1,0 +1,106 @@
+@use '../base/variable';
+
+.login {
+    width: 400px;
+    height: 600px;
+    background-color: variable.$white-color;
+    display: flex;
+    flex-direction: column;
+    padding: variable.$default-padding;
+    margin-left: 200px;
+    .login__top {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .login-title {
+        font-size: variable.$text-2-size;
+    }
+
+    p {
+        margin-top: 10px;
+        font-weight: 400;
+    }
+
+    a {
+        color: variable.$link-color;
+        font-weight: 900;
+        cursor: pointer;
+    }
+
+    img {
+        width: 30px;
+        height: 30px;
+    }
+
+    input {
+        width: 100%;
+        font-size: variable.$text-1-size;
+        padding: variable.$default-padding;
+        border: variable.$border-default;
+        background-color: variable.$white-color;
+        border-radius: variable.$radius-default;
+
+        &:nth-child(2) {
+            margin-top: 15px;
+            margin-bottom: 20px;
+        }
+
+        &:focus {
+            background-color: transparent;
+        }
+    }
+
+    .login__main {
+        margin-top: 50px;
+
+        .sign__btn {
+            margin-top: 30px;
+            color: variable.$white-color;
+            background-color: variable.$link-color;
+            border-radius: variable.$radius-default;
+            padding: variable.$default-padding;
+            width: 100%;
+            font-size: variable.$text-2-size;
+        }
+
+    }
+
+    .login__appp-or {
+        padding-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 10px;
+        color: variable.$title-color;
+
+        div {
+            width: 42%;
+            height: 2px;
+            background-color: variable.$text-color;
+        }
+    }
+
+    .login-google-facebook {
+        margin-top: 40px;
+        display: flex;
+        justify-content: space-around;
+
+        div {
+            width: 150px;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            font-weight: 600;
+            height: auto;
+            padding: variable.$padding-x;
+            border: variable.$border-default;
+            border-radius: variable.$radius-default;
+        }
+    }
+
+    hr {
+        margin-top: 30px;
+        color: variable.$title-color;
+    }
+}

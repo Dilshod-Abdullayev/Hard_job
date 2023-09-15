@@ -1,0 +1,21 @@
+@use "../base/variable";
+
+.searchpanel {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    color: variable.$text-color;
+    align-items: center;
+    font-size: variable.$text-1-size;
+
+    & {
+        input {
+            width: 100%;
+            height: 100%;
+            padding: variable.$default-padding;
+            outline: none;
+            border: none;
+            color: variable.$text-color;
+        }
+    }
+}
